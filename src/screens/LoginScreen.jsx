@@ -38,8 +38,22 @@ const LoginScreen = ({ navigation }) => {
     }
   };
 
+  const handleAboutButton = async () => {
+    navigation.navigate('About');
+  } 
+
+  const handleRegisterButton = async () => {
+    navigation.navigate('Register');
+  } 
+
   return (
     <View style={styles.container}>
+      <View style={styles.aboutButtonContainer}>
+        <TouchableOpacity style={styles.aboutButton} onPress={handleAboutButton}>
+          <Text style={styles.aboutButtonText}>SOBRE NÓS</Text>
+        </TouchableOpacity>
+      </View>
+
       <Image source={logoMarcoPolo} style={styles.logo} />
 
       <Text style={styles.loginText}>LOGIN</Text>
@@ -59,7 +73,10 @@ const LoginScreen = ({ navigation }) => {
         placeholderTextColor="#8b826e"
       />
       <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-        <Text style={styles.buttonText}>ENTRAR</Text>
+        <Text style={styles.loginButtonText}>ENTRAR</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.registerButton} onPress={handleRegisterButton}>
+        <Text style={styles.registerButtonText}>CADASTRO</Text>
       </TouchableOpacity>
     </View>
   );
@@ -67,19 +84,23 @@ const LoginScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
+    flex: 1,
     backgroundColor: "#FAEBCE",
-    padding: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 50,
   },
   logo: {
     width: 150,
     height: 150,
-    margin: 50,
+    marginTop: 40,
+    marginBottom: 60,
   },
   loginText: {
     color: "#794a3a",
     fontSize: 24,
     fontWeight: "bold",
+    justifyContent: "center",
     marginBottom: 20,
   },
   emailInput: {
@@ -100,6 +121,33 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
   },
+  aboutButtonContainer: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+  },
+  aboutButton: {
+    backgroundColor: "#fac97a",
+    borderRadius: 21,
+    borderWidth: 1,
+    borderColor: "#794a3a",
+    width: 100,
+    height: 30,
+    margin: 40,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  registerButton: {
+    backgroundColor: "#dc5341",
+    borderRadius: 21,
+    borderWidth: 1,
+    borderColor: "#794a3a",
+    width: 129,
+    height: 51,
+    marginTop: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   loginButton: {
     backgroundColor: "#68c7c1",
     borderRadius: 21,
@@ -110,9 +158,25 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  buttonText: {
+  loginButtonText: {
     color: "#794a3a",
-    fontSize: 16,
+    fontSize: 15,
+    justifyContent: "center",
+    textAlign: "center",
+    fontWeight: "600",
+  },
+  registerButtonText: {
+    color: "#794a3a",
+    fontSize: 15,
+    justifyContent: "center",
+    textAlign: "center",
+    fontWeight: "600",
+  },
+  aboutButtonText: {
+    color: "#794a3a",
+    fontSize: 11,
+    justifyContent: "center",
+    textAlign: "center",
     fontWeight: "600",
   },
 });
