@@ -8,10 +8,14 @@ import {
   Image,
 } from "react-native";
 import logoMarcoPolo from "../../assets/MarcoPoloLogoT.png";
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from "./LanguageSelector";
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { t } = useTranslation();
 
   const handleLogin = async () => {
     try {
@@ -49,8 +53,9 @@ const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.aboutButtonContainer}>
+        <LanguageSelector/>
         <TouchableOpacity style={styles.aboutButton} onPress={handleAboutButton}>
-          <Text style={styles.aboutButtonText}>SOBRE NÓS</Text>
+          <Text style={styles.aboutButtonText}>{t('about_us_button_login_screen')}</Text>
         </TouchableOpacity>
       </View>
 
@@ -58,14 +63,14 @@ const LoginScreen = ({ navigation }) => {
 
       <Text style={styles.loginText}>LOGIN</Text>
       <TextInput
-        placeholder="Email/Apelido"
+        placeholder={t('username_place_holder_login_screen')}
         value={email}
         onChangeText={setEmail}
         style={styles.emailInput}
         placeholderTextColor="#8b826e"
       />
       <TextInput
-        placeholder="Senha"
+        placeholder={t('password_place_holder_login_screen')}
         value={password}
         onChangeText={setPassword}
         secureTextEntry
@@ -73,10 +78,10 @@ const LoginScreen = ({ navigation }) => {
         placeholderTextColor="#8b826e"
       />
       <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-        <Text style={styles.loginButtonText}>ENTRAR</Text>
+        <Text style={styles.loginButtonText}>{t('sign_in_button_login_screen')}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.registerButton} onPress={handleRegisterButton}>
-        <Text style={styles.registerButtonText}>CADASTRO</Text>
+        <Text style={styles.registerButtonText}>{t('sign_up_button_login_screen')}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -124,7 +129,11 @@ const styles = StyleSheet.create({
   aboutButtonContainer: {
     position: 'absolute',
     top: 0,
-    right: 0,
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "center",
   },
   aboutButton: {
     backgroundColor: "#fac97a",

@@ -1,0 +1,24 @@
+{
+    "title_sign_up_screen": "Registro de Usuario",
+    "name_sign_up_screen": "Nombre:",
+    "email_sign_up_screen": "Correo Electrónico:",
+    "password_sign_up_screen": "Contraseña:",
+    "confirm_password_sign_up_screen": "Confirmar Contraseña:",
+    "sign_up_button_sign_up_screen": "REGISTRARSE",
+    "name_place_holder_sign_up_screen": "Ingrese su Nombre",
+    "email_place_holder_sign_up_screen": "Ingrese su Correo Electrónico",
+    "password_place_holder_sign_up_screen": "Ingrese su contraseña",
+    "confirm_password_place_holder_sign_up_screen": "Repita su contraseña",
+
+    "username_place_holder_login_screen": "Correo Electrónico/Apodo",
+    "password_place_holder_login_screen": "Contraseña",
+    "about_us_button_login_screen": "SOBRE NOSOTROS",
+    "sign_in_button_login_screen": "INGRESAR",
+    "sign_up_button_login_screen": "REGISTRARSE",
+
+    "title_about_screen": "SOBRE NOSOTROS",
+    "text_1_about_screen": "Con un enfoque interactivo e intuitivo de los puntos turísticos de nuestro centro de Pernambuco, el equipo (S)CRYPT surgió con la innovación de tomar los conocimientos de los libros y traerlos al alcance del turista y del residente de Recife.",
+    "text_2_about_screen": "A través de un sistema de GPS y mediante un teléfono celular, la presente aplicación ofrece la posibilidad de visitas presenciales a puntos turísticos, hechos históricos y objetos digitales coleccionables de rareza variada.",
+    "text_3_about_screen": "Cuanto más se explore nuestra querida capital, mayores serán las posibilidades de obtener objetos únicos.",
+    "text_4_about_screen": "El equipo (S)CRYPT se compromete a demostrar que la historia, el entretenimiento y la movilidad deben ir de la mano."
+}

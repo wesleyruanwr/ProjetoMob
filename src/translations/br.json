@@ -1,0 +1,24 @@
+{
+    "title_sign_up_screen": "Cadastro de Usuário",
+    "name_sign_up_screen": "Nome:",
+    "email_sign_up_screen": "Email:",
+    "password_sign_up_screen": "Senha:",
+    "confirm_password_sign_up_screen": "Comfirma Senha:",
+    "sign_up_button_sign_up_screen": "CADASTRAR",
+    "name_place_holder_sign_up_screen": "Digite seu Nome",
+    "email_place_holder_sign_up_screen": "Digite seu Email",
+    "password_place_holder_sign_up_screen": "Digite sua senha",
+    "confirm_password_place_holder_sign_up_screen": "Repita sua senha",
+
+    "username_place_holder_login_screen": "Email/Apelido",
+    "password_place_holder_login_screen": "Senha",
+    "about_us_button_login_screen": "SOBRE NÓS",
+    "sign_in_button_login_screen": "ENTRAR",
+    "sign_up_button_login_screen": "CADASTRAR",
+
+    "title_about_screen": "SOBRE NÓS", 
+    "text_1_about_screen": "Com uma abordagem interativa e intuitiva dos pontos turísticos de nosso centro pernambucano, a equipe (S)CRYPT surgiu com a inovação de tirar os conhecimentos dos livros e traze-los aos toques do turista e do recifense.",
+    "text_2_about_screen": "Por meio de um sistema de GPS e por meio de um celular, o presente aplicativo entrega a possibilidade de visita presencial a pontos turísticos, fatos históricos, e itens digitais colecionáveis de raridade variada.",
+    "text_3_about_screen": "Quanto mais for desbravada a nossa querida capital, maiores as chances de obter os itens únicos!",
+    "text_4_about_screen": "A equipe (S)CRYPT tem compromisso em mostrar que a história, entretenimento e mobilidade devem andar juntos."
+}

@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
+import './src/i18n';
 import LoginScreen from "./src/screens/LoginScreen";
 import RegisterScreen from "./src/screens/RegisterScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
+import AboutScreen from "./src/screens/AboutScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +33,7 @@ export default function App() {
       >
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="About" component={AboutScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

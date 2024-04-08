@@ -1,0 +1,24 @@
+{
+    "title_sign_up_screen": "User Registration",
+    "name_sign_up_screen": "Name:",
+    "email_sign_up_screen": "Email:",
+    "password_sign_up_screen": "Password:",
+    "confirm_password_sign_up_screen": "Confirm Password:",
+    "sign_up_button_sign_up_screen": "REGISTER",
+    "name_place_holder_sign_up_screen": "Enter your Name",
+    "email_place_holder_sign_up_screen": "Enter your Email",
+    "password_place_holder_sign_up_screen": "Enter your password",
+    "confirm_password_place_holder_sign_up_screen": "Repeat your password",
+
+    "username_place_holder_login_screen": "Email/Nickname",
+    "password_place_holder_login_screen": "Password",
+    "about_us_button_login_screen": "ABOUT US",
+    "sign_in_button_login_screen": "LOG IN",
+    "sign_up_button_login_screen": "REGISTER",
+
+    "title_about_screen": "ABOUT US",
+    "text_1_about_screen": "With an interactive and intuitive approach to the tourist spots of our Pernambuco center, the (S)CRYPT team emerged with the innovation of taking the knowledge from the books and bringing it to the touches of the tourist and the Recife resident.",
+    "text_2_about_screen": "Through a GPS system and by means of a cellphone, the present application delivers the possibility of in-person visits to tourist spots, historical facts, and collectible digital items of various rarities.",
+    "text_3_about_screen": "The more our beloved capital is explored, the greater the chances of obtaining unique items!",
+    "text_4_about_screen": "The (S)CRYPT team is committed to showing that history, entertainment, and mobility should go hand in hand."
+}
